@@ -1,0 +1,9 @@
+# Log started on 04/28/2019 [mm/dd/yyyy] at 23:47:03
+# Command line arguments: -p methane_fw.prmtop
+# Loaded topologies: methane_fw.prmtop
+summary
+loadRestrt methane_fw.rst7
+strip :1
+summary
+outparm fw.prmtop fw.rst7
+quit

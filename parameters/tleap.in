@@ -1,0 +1,13 @@
+source leaprc.gaff
+source leaprc.water.tip3p
+
+#beta = loadPDB methane.pdb
+beta = loadmol2 methane.mol2
+check beta
+loadamberparams methane.frcmod
+saveoff beta methane.lib
+
+solvatebox beta TIP3PBOX 12.0
+saveAmberParm beta methane_solvate.prmtop methane_solvate.rst7
+savepdb beta methane_solvate.pdb
+quit

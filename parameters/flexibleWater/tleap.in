@@ -1,0 +1,18 @@
+source leaprc.gaff
+loadamberparams frcmod.spcfw
+loadOff spcfwbox.off
+
+#beta = loadPDB methane.pdb
+beta = loadmol2 methane.mol2
+check beta
+loadamberparams methane.frcmod
+saveoff beta methane.lib
+
+WAT = SPF
+#loadamberparams frcmod.spcfw
+set default FlexibleWater on
+
+solvateBox beta SPCFWBOX 10
+saveAmberParm beta methane_fw.prmtop methane_fw.rst7
+savepdb beta methane_fw.pdb
+quit

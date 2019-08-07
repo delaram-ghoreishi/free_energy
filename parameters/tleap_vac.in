@@ -1,0 +1,11 @@
+source leaprc.gaff
+
+#beta = loadPDB methane.pdb
+beta = loadmol2 methane.mol2
+check beta
+loadamberparams methane.frcmod
+saveoff beta methane.lib
+
+saveAmberParm beta methane_vac.prmtop methane_vac.rst7
+savepdb beta methane_vac.pdb
+quit

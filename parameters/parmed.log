@@ -1,0 +1,33 @@
+# Log started on 04/25/2019 [mm/dd/yyyy] at 10:15:51
+# Command line arguments: -p methane_solvate.prmtop
+# Loaded topologies: methane_solvate.prmtop
+summary
+help atrip
+help strip
+strip :1
+summary
+outparm water.prmtop
+help change
+quit
+# Log started on 04/25/2019 [mm/dd/yyyy] at 10:20:32
+# Command line arguments: -p methane_solvate.prmtop
+# Loaded topologies: methane_solvate.prmtop
+summary
+strip :1
+summary
+outparm water.prmtop water.rst7
+setOverwrite
+outparm water.prmtop water.inpcrd
+unsetOverwrite
+quit
+# Log started on 04/25/2019 [mm/dd/yyyy] at 10:24:03
+# Command line arguments: -p methane_solvate.prmtop
+# Loaded topologies: methane_solvate.prmtop
+# Log started on 04/25/2019 [mm/dd/yyyy] at 10:24:32
+# Command line arguments: -p methane_solvate.prmtop
+# Loaded topologies: methane_solvate.prmtop
+summary
+loadRestrt methane_solvate.rst7
+strip :1
+summary
+outparm water.prmtop water.rst7
